@@ -3,3 +3,135 @@
     margin: 0;
     padding: 0;
 }
+
+.slider {
+    background-image: url(../assets/images/slider\ background.jpg);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-item img{
+    height: 480px;
+    margin: 1%;
+    object-fit: contain;
+}
+.footer-class{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+
+.footer-class a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-class a:hover{
+    color: red;
+}
+
+.footer-class p{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.section-footer{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    color: white;
+}
+
+.section-footer .bi{
+    margin: 0px 10px;
+    font-size: 28px;
+}
+
+.container-logo-footer{
+    padding: 15px;
+}
+
+.logo-footer{
+    box-shadow: 10px 10px 50px red;
+    border-radius: 100px;
+    height: 100%;
+    width: 80%;
+}
+
+.logo-footer:hover{
+    box-shadow: 10px 10px 70px red;;
+}
+
+.container-contact-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.contact-data{
+    display: flex;
+    margin: 4px 0;
+}
+
+.container-developers-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.developer-section{
+    display: flex;
+    width: 70%;
+    margin: 4px 0;
+}
+
+.developer-section p {
+    font-size: 20px;
+}
+
+@media(width <= 1220px){
+    .footer-class{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-footer{
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .logo-footer{
+        height: 40%;
+        width: 40%;    
+    }
+
+    .contact-section{
+        justify-content: center;
+        width: 50%;
+    }
+
+    .developer-section{
+        width: 50%;
+    }
+    
+}
+
+@media(width <= 510px){
+    .developer-section{
+        width: 90%;
+    }
+
+    .contact-section{
+        width: 90%;
+    }
+}
