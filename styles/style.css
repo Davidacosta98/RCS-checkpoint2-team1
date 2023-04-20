@@ -136,7 +136,7 @@
     }
 }
 
-/* Navbar */
+/* ----Navbar----- */
 
 .img-logo {
     width: 100px;
@@ -151,3 +151,10 @@
 .nav-span {
     color: #F42820;   
 }
+/* BORRAR */
+.p-borrar {
+    margin-top:150px ;
+    margin-bottom: 30px;
+}
+/* BORRAR */
+/* ----Navbar----- */
