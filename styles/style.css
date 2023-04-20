@@ -142,3 +142,12 @@
     width: 100px;
     border-radius: 30px;
 }
+
+.btn-nav-color {
+    background-color: #F42820;
+    color: aliceblue;
+}
+
+.nav-span {
+    color: #F42820;   
+}
