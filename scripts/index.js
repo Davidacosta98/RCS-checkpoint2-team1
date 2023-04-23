@@ -66,3 +66,53 @@ const createProductsCards = (products) => {
 }
 
 createProductsCards(products);
+
+const developers = [
+    {
+        id : 1,
+        devName : "Pablo Díaz",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    },
+    {
+        id : 2,
+        devName : "Miguel Palomares",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    },
+    {
+        id : 3,
+        devName : "Daniela Gonzalez",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    },
+    {
+        id : 4,
+        devName : "David Acosta",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    }
+];
+
+const addDeveloper = (developers) => {
+    const sectionFooter = document.getElementById ("section-footer-id");
+
+    developers.forEach((developer) => {
+        const developerSection = document.createElement("div");
+        developerSection.classList.add("developer-section");
+        
+        developerSection.innerHTML = `
+            <a href=${developer.profileGithub} class="github-link">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href=${developer.profileLinkedin} class="linkedin-link">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <p class="name-developer">${developer.devName}</p>
+        `;
+
+        sectionFooter.appendChild(developerSection);
+    });
+}
+
+addDeveloper(developers);
