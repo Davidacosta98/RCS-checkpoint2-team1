@@ -11,6 +11,7 @@ const createProductsCards = (products) => {
 
     const carouselItem = document.createElement("div");
     carouselItem.classList.add("carousel-item");
+    carouselItem.classList.add("bg-color-black");
     carouselItem.classList.add("active");
     containerProducts.appendChild(carouselItem);
 
@@ -26,12 +27,15 @@ const createProductsCards = (products) => {
             const containerCard = document.createElement("div");
     
             containerCard.innerHTML = `
-                <div class="card col-sm-12 m-1" style="width: 18rem;">
-                    <img src=${product.image} class="card-img-top" alt=${product.title}>
-                    <div class="card-body">
+                <div class="card col-sm-12 card-modified m-1">
+                    <div class="col-10 align-self-center">
+                        <img src=${product.image} class="card-img-top" alt=${product.title}> 
+                    </div>     
+                    <div class="card-body d-flex flex-column justify-content-between">
                         <h5 class="card-title">${product.title}</h5>
                         <p class="card-text">${product.description}</p>
-                        <a href="#" class="btn btn-primary">¡COMPRAR!</a>
+                        <p class="fs-2">$ ${product.price}</p>
+                        <a href="#" class="btn btn-danger">¡Agregar al carrito!</a>
                     </div>
                 </div> 
             `;
@@ -48,6 +52,7 @@ const createProductsCards = (products) => {
         if (flag == 0){
             const carouselItem = document.createElement("div");
             carouselItem.classList.add("carousel-item");
+            carouselItem.classList.add("bg-color-black");
             containerProducts.appendChild(carouselItem);
             
             counter++;
@@ -66,3 +71,53 @@ const createProductsCards = (products) => {
 }
 
 createProductsCards(products);
+
+const developers = [
+    {
+        id : 1,
+        devName : "Pablo Díaz",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    },
+    {
+        id : 2,
+        devName : "Miguel Palomares",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    },
+    {
+        id : 3,
+        devName : "Daniela Gonzalez",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    },
+    {
+        id : 4,
+        devName : "David Acosta",
+        profileGithub : "#",
+        profileLinkedin : "#"
+    }
+];
+
+const addDeveloper = (developers) => {
+    const sectionFooter = document.getElementById ("section-footer-id");
+
+    developers.forEach((developer) => {
+        const developerSection = document.createElement("div");
+        developerSection.classList.add("developer-section");
+        
+        developerSection.innerHTML = `
+            <a href=${developer.profileGithub} class="github-link">
+                <i class="bi bi-github"></i>
+            </a>
+            <a href=${developer.profileLinkedin} class="linkedin-link">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <p class="name-developer">${developer.devName}</p>
+        `;
+
+        sectionFooter.appendChild(developerSection);
+    });
+}
+
+addDeveloper(developers);

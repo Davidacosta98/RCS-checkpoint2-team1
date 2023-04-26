@@ -16,6 +16,17 @@
     object-fit: contain;
 }
 
+/* Products slider */
+.bg-color-black {
+    background-color: black;
+}
+
+.card-modified {
+    width: 20rem; 
+    height: 99%;
+}
+/* End products slider */
+
 /* Donde nos ubicamos*/
 .points-of-sale{
     display: flex;
