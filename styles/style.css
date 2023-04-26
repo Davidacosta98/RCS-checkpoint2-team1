@@ -16,6 +16,13 @@
     object-fit: contain;
 }
 
+/* Donde nos ubicamos*/
+.points-of-sale{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
 /* Footer */
 .footer-class{
     display: flex;
