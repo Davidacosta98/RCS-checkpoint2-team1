@@ -1,5 +1,6 @@
 const products = [
     {
+        "amount": "1",
         "id": "1",
         "title": "Draconic K530 60%",
         "category": "Teclado",
@@ -9,6 +10,7 @@ const products = [
         "image": "https://redragon.es/content/uploads/2021/05/DRACONIC.png"
     },
     {
+        "amount": "1",
         "id": "2",
         "title": "Dyaus gamer K509",
         "category": "Teclado",
@@ -18,6 +20,7 @@ const products = [
         "image": "https://redragon.es/content/uploads/2021/04/DYAUS-1.png"
     },
     {
+        "amount": "1",
         "id": "3",
         "title": "Gainer M610",
         "category": "Mouse",
@@ -27,6 +30,7 @@ const products = [
         "image": "https://redragon.es/content/uploads/2021/04/GAINER.png"
     },
     {
+        "amount": "1",
         "id": "4",
         "title": "Kunlun L P006",
         "category": "MousePad",
@@ -36,6 +40,7 @@ const products = [
         "image": "https://www.venex.com.ar/products_images/1534178547_p00681.png"
     },
     {
+        "amount": "1",
         "id": "5",
         "title": "Lamia 2 H320",
         "category": "Auricular",
@@ -45,6 +50,7 @@ const products = [
         "image": "https://redragon.es/content/uploads/2021/04/LAMIA.png"
     },
     {
+        "amount": "1",
         "id": "6",
         "title": "Storm Elite M988",
         "category": "Mouse",
@@ -54,6 +60,7 @@ const products = [
         "image": "https://redragon.es/content/uploads/2021/04/STORM-ELITE.png"
     },
     {
+        "amount": "1",
         "id": "7",
         "title": "Suzaku P003",
         "category": "MousePad",
@@ -63,6 +70,7 @@ const products = [
         "image": "https://www.venex.com.ar/products_images/1534178785_jkjhkl.png"
     },
     {
+        "amount": "1",
         "id": "8",
         "title": "Zeus X RGB ",
         "category": "Auricular",
@@ -73,9 +81,9 @@ const products = [
     }
 ];
 
+const containerProducts = document.getElementById("container-products");
 
 const createProductsCards = (products) => {
-    const containerProducts = document.getElementById("container-products");
     let flag = 1;
     let counter = 0;
     const arrayfordefinevariable = [];
@@ -111,8 +119,8 @@ const createProductsCards = (products) => {
                 <div class="card-body d-flex flex-column justify-content-between text-white">
                     <h5 class="card-title">${product.title}</h5>
                     <p class="card-text">${product.description}</p>
-                    <p class="fs-2">$ ${product.price}</p>
-                    <a href="#" class="btn btn-danger">¡Agregar al carrito!</a>
+                    <p class="fs-2">$ ${parseFloat(product.price).toFixed(2)}</p>
+                    <button class="btn btn-danger" id="${product.id}">¡Agregar al carrito!</button>
                 </div>
             `;
     
