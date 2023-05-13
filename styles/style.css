@@ -10,8 +10,8 @@ body{
 
 .slider {
     /* background-image: url(../assets/images/slider\ background.jpg); */
-    margin-top: 126px;
-    margin-bottom:100px;
+    margin-top: 180px;
+    margin-bottom:50px;
 }
 
 .carousel-item img{
@@ -177,12 +177,7 @@ body{
 .nav-span {
     color: #F42820;   
 }
-/* BORRAR */
-.p-borrar {
-    margin-top:150px ;
-    margin-bottom: 30px;
-}
-/* BORRAR */
+
 /* ----Navbar----- */
 
 /* Shopping Cart */
@@ -208,7 +203,8 @@ body{
     color: #F42820;
     font-weight: 600;
     background-color: rgb(3, 3, 3);
-    margin-top: 800px;
+    margin-top: 1000px;
+    margin-bottom:800px;
   }
   
   .container-contact {
