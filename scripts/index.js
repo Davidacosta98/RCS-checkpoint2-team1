@@ -119,7 +119,13 @@ const createProductsCards = (products) => {
                 <div class="card-body d-flex flex-column justify-content-between text-white">
                     <h5 class="card-title">${product.title}</h5>
                     <p class="card-text">${product.description}</p>
-                    <p class="fs-2">$ ${parseFloat(product.price).toFixed(2)}</p>
+                    <div class = "d-flex justify-content-between align-items-center">
+                        <p class="fs-2 h-100 m-0 p-0">$ ${parseFloat(product.price).toFixed(2)}</p>
+                        <div class="h-100 fs-2 cursor">
+                            ${soldUnits(product.id)} 
+                            <i class="bi bi-cart4"></i>
+                        </div>
+                    </div>
                     <button class="btn btn-danger" id="${product.id}">¡Agregar al carrito!</button>
                 </div>
             `;
@@ -155,6 +161,20 @@ const createProductsCards = (products) => {
 }
 
 createProductsCards(products);
+
+function soldUnits(productId){
+    let amount;
+    if(isContainedInTheCart(productId) != undefined){
+        cart.forEach(productCart => {
+            if(productCart.id === productId){
+                amount = productCart.amount;
+            }
+        })
+    }else{
+        amount = 0;
+    }
+    return amount;
+}
 
 const developers = [
     {

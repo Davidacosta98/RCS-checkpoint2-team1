@@ -58,6 +58,7 @@
                     </ul>
                     <input class="form-control-sm me-2" type="text" name="search" id="search" placeholder="Buscar...">
                     
+                    <!-- Shopping cart in dropdown menu -->
                     <div class="dropstart m-2">
                         <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="bi bi-cart4"></i>
@@ -69,8 +70,10 @@
                                     Carrito de compras
                                 </p>
                             </div>
-                            <div class="modified-list" id="product-container">
+                            <div id="product-container">
                                 <p class="text-center fs-5">¡ Su carrito de compras esta vacío !</p>
+                            </div>
+                            <div id="total-container">
                             </div>
                         </div>
                     </div>
@@ -204,7 +207,8 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
 <!-- Local JS -->
-<script src="scripts/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="scripts/shopping-cart.js"></script>
+<script src="scripts/index.js"></script>
 
 </html>

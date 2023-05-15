@@ -193,11 +193,16 @@ body{
 }
 
 .modified-list{
-    list-style-type: none;
+    max-height: 20rem;
+    overflow-y: scroll;
 }
 
 .items{
     width: 25%;
     text-align: center;
+}
+
+.cursor{
+    cursor: pointer;
 }
 /* End Shopping Cart */
