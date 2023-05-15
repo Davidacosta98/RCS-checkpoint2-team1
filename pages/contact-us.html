@@ -18,7 +18,7 @@
 <body>
     <header>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <nav class="container-nav navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/index.html">
                     <img src="../assets/images/proplayers-logo.png" class="img-logo img-fluid" alt="proplayers-logo">
@@ -64,10 +64,21 @@
     </header>
 
     <main>
-        <section>
-            <!--BORRAR-->
-            <p class="p-borrar h1">SECCION DE FORMULARIO DE CONTACTO</p>
-            <!--BORRAR-->
+        <h2 class="text-center title-contact p-3" id="form">Contacto</h2>
+        <section class="container-contact"> 
+            <form action="#" method="post">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" placeholder="Nombre" autocomplete="off" required>
+                <label for="lastname"></label>
+                <input type="text" name="lastname" id="lastname" placeholder="Apellido" autocomplete="off" required>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Dirección de correo electrónico" autocomplete="off" required>
+                <label for="cel"></label>
+                <input type="number" name="numCel" id="cel" placeholder="Número de celular" autocomplete="off" required>
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Deja tu mensaje aquí" autocomplete="off" required></textarea>
+                <input class="btn-send" type="submit" value="Enviar">
+            </form>   
         </section>
     </main>
 
