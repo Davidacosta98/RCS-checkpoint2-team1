@@ -10,8 +10,8 @@ body{
 
 .slider {
     /* background-image: url(../assets/images/slider\ background.jpg); */
-    margin-top: 126px;
-    margin-bottom:100px;
+    margin-top: 180px;
+    margin-bottom:50px;
 }
 
 .carousel-item img{
@@ -177,10 +177,105 @@ body{
 .nav-span {
     color: #F42820;   
 }
-/* BORRAR */
-.p-borrar {
-    margin-top:150px ;
-    margin-bottom: 30px;
-}
-/* BORRAR */
+
 /* ----Navbar----- */
+
+/* Shopping Cart */
+
+.modified-container{
+    padding: 10px;
+    width: 30vw;
+}
+
+.modified-list{
+    max-height: 20rem;
+    overflow-y: scroll;
+}
+
+.items{
+    width: 25%;
+    text-align: center;
+}
+
+.cursor{
+    cursor: pointer;
+}
+/* End Shopping Cart */
+
+/* form*/
+
+.title-contact {
+    color: #F42820;
+    font-weight: 600;
+    background-color: rgb(3, 3, 3);
+    margin-top: 1000px;
+    margin-bottom:800px;
+  }
+  
+  .container-contact {
+    background-color: rgb(3, 3, 3);
+  }
+  
+  .container-contact form input,
+    textarea {
+      resize: none;
+      border: 0.1rem solid rgb(155, 155, 155);
+      border-radius: .5rem;
+  }
+  
+  .container-contact form input:hover {
+      box-shadow: 0 0 5px 1px #F42820;
+  }
+  
+  .container-contact form textarea:hover {
+      box-shadow: 0 0 5px 1px #F42820;
+  }
+  
+  .container-contact form .btn-send {
+      background-color: #F42820;
+      color: white;
+      border: none;
+      border-radius: .5rem;
+  }
+  
+  .container-contact form .btn-send:hover {
+      box-shadow: none;
+  }
+  
+  @media screen and (min-width: 320px) {
+    .title-contact {
+      margin: 0rem;
+    }
+    
+    .container-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2rem;
+    }
+  
+    .container-contact form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container-contact form input,
+    textarea {
+      padding: 0.8rem;
+      margin: 0.5rem 0rem;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+      .container-contact form {
+          width: 80%;
+      }
+  }
+  
+  @media screen and (min-width: 1024px) {
+      .container-contact form {
+          width: 60%;
+      }
+  }
+  
+  /* form*/
