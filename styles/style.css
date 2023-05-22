@@ -191,7 +191,7 @@ body{
 }
 
 .btn-nav-color {
-    background-color: #F42820;
+    /* background-color: #F42820; */
     color: aliceblue;
 }
 
@@ -231,6 +231,7 @@ body{
     background-color: rgb(3, 3, 3);
     margin-top: 1000px;
     margin-bottom:800px;
+    text-shadow: 1px 1px 1px black, 0 0 0.5em rgb(253, 253, 253), 0 0 0.2em rgb(0, 0, 0) ;
   }
   
   .container-contact {

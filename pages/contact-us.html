@@ -42,18 +42,18 @@
                             <a class="nav-link disabled" href="#">Contacto</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ingresar</a>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-circle"></i></a>
                             <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class="dropdown-item" href="#">Ingresar con tu Cuenta</a>
+                                    <a class="dropdown-item" href="https://bootstrapmade.com/demo/ComingSoon/">Ingresar con tu Cuenta</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="#">Ingresar con Gmail</a>
+                                    <a class="dropdown-item" href="https://bootstrapmade.com/demo/ComingSoon/">Ingresar con Gmail</a>
                                 <li>   
                             </ul>
                         </li>
                     </ul>
-                    <button class="btn-nav-color btn" type="button">
+                    <button class="btn btn-danger" type="button">
                         <i class="bi bi-cart4"></i>
                         Carrito
                     </button>
@@ -64,8 +64,8 @@
     </header>
 
     <main>
-        <h2 class="text-center title-contact p-3" id="form">Contacto</h2>
-        <section class="container-contact"> 
+        <h2 class="text-center title-contact p-3 bg-transparent" id="form">Contacto</h2>
+        <section class="container-contact container bg-transparent col-md-7"> 
             <form action="#" method="post">
                 <label for="name"></label>
                 <input type="text" name="name" id="name" placeholder="Nombre" autocomplete="off" required>
@@ -76,7 +76,7 @@
                 <label for="cel"></label>
                 <input type="number" name="numCel" id="cel" placeholder="Número de celular" autocomplete="off" required>
                 <label for="message"></label>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Deja tu mensaje aquí" autocomplete="off" required></textarea>
+                <textarea name="message" class="mb-1 mt-1" id="message" cols="30" rows="5" placeholder="Deja tu mensaje aquí" autocomplete="off" required></textarea>
                 <input class="btn-send" type="submit" value="Enviar">
             </form>   
         </section>
