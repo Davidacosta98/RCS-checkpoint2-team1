@@ -34,6 +34,7 @@ body{
 /* Donde nos ubicamos*/
 .points-of-sale{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 50px;
 }
