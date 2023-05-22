@@ -6,6 +6,7 @@
 
 body{
     background-image: url(../assets/images/slider\ background.jpg);
+    font-family:sans-serif;
 }
 
 .slider {
@@ -280,3 +281,11 @@ body{
   }
   
   /* form*/
+
+  /*tipography */
+
+.container-text {
+    text-shadow: 1px 1px 1px #000;
+}
+
+ /*tipography */
